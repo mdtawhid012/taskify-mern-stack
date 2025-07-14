@@ -47,7 +47,7 @@ export default function TaskForm({ task, onClose, token }) {
     <div className="flex justify-center mt-6 bg-gray-100 max-w-96 mx-auto shadow-lg rounded-lg">
       <form className="flex flex-col py-4 w-full" onSubmit={handleSubmit}>
         <input
-          className="border-2 rounded-md mx-4 my-2 p-2"
+          className="border-2 rounded-md mx-4 my-2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           id="title"
           type="text"
           placeholder="Title"
@@ -55,7 +55,7 @@ export default function TaskForm({ task, onClose, token }) {
           onChange={(e) => setTitle(e.target.value)}
         />
         <textarea
-          className="border-2 rounded-md mx-4 my-2 p-2 pb-12 inline-block align-top"
+          className="border-2 rounded-md mx-4 my-2 p-2 pb-12 inline-block align-top focus:outline-none focus:ring-2 focus:ring-blue-500"
           id="description"
           type="text"
           placeholder="Description"
