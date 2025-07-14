@@ -54,7 +54,7 @@ export default function TaskForm({ task, onClose, token }) {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <input
+        <textarea
           className="border-2 rounded-md mx-4 my-2 p-2 pb-12 inline-block align-top"
           id="description"
           type="text"
